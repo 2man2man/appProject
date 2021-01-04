@@ -22,6 +22,8 @@ import com.thumann.tasksforme.session.Session;
 
 public class MainActivity extends AppCompatActivity {
 
+    //comment
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
