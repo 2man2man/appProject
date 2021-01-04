@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tasks For Me</string>
+    <string name="username" translatable="false">User</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="confirmPassword" translatable="false">Confirm Password</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="createUser" translatable="false">Create User</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="AddNewFriends">Add friends</string>
+    <string name="SearchFriends">Search new friends</string>
+</resources>

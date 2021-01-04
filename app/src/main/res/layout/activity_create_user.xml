@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createuser.CreateUserActivity">
+
+    <EditText
+        android:id="@+id/CreateUserUsername"
+        android:layout_width="209dp"
+        android:layout_height="@dimen/textheight"
+        android:background="@drawable/textwhitebackground"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <EditText
+        android:id="@+id/CreateUserPassword"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/textheight"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textwhitebackground"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/CreateUserUsername"
+        app:layout_constraintStart_toStartOf="@+id/CreateUserUsername"
+        app:layout_constraintTop_toBottomOf="@+id/CreateUserUsername" />
+
+    <EditText
+        android:id="@+id/CreateUserPasswordConfirm"
+        android:layout_width="210dp"
+        android:layout_height="@dimen/textheight"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textwhitebackground"
+        android:ems="10"
+        android:hint="@string/confirmPassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/CreateUserPassword"
+        app:layout_constraintStart_toStartOf="@+id/CreateUserPassword"
+        app:layout_constraintTop_toBottomOf="@+id/CreateUserPassword" />
+
+    <Button
+        android:id="@+id/CreateUserButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="createUser"
+        android:text="@string/createUser"
+        app:layout_constraintEnd_toEndOf="@+id/CreateUserPasswordConfirm"
+        app:layout_constraintStart_toStartOf="@+id/CreateUserPasswordConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/CreateUserPasswordConfirm" />
+</androidx.constraintlayout.widget.ConstraintLayout>
